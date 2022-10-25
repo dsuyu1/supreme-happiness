@@ -1,7 +1,22 @@
 import re
+import random
 
 # Get the answer.
-answer = "What's Up, Doc?" 
+pool_file = open("hangman-sample-answer-pool.txt")
+
+pool_answers = [] # stores all the answers
+
+pool_answer_line = pool_file.readline()
+
+while pool_answer_line:
+    pool_answers.append(pool_answer_line)
+
+    pool_answer_line = pool_file.readline() # reassings pool_answer_line to each line of our .txt file as the functions iterates
+
+pool_file.close()
+
+
+answer =  random.choice(pool_answers)
 
 # Capitalizes all the letters in the answer string.
 answer = answer.upper()
