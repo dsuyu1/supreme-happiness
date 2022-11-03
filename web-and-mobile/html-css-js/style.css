@@ -1,0 +1,17 @@
+p
+{
+    color:rgb(255, 0, 72);
+}
+
+.header-background
+{
+    background-color: rgb(255, 0, 60); 
+    color: white;
+    text-decoration: underline;
+}       
+
+#bigger-font 
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+}
